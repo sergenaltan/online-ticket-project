@@ -7,6 +7,15 @@ import BuyPlaneTicketPage from '../views/BuyTicketViews/buyPlaneTicketPage.svelt
 import WalletPage from '../views/walletPage.svelte';
 import MyBillsPage from '../views/myBills.svelte';
 import MSSPage from '../views/MSSPage.svelte';
+import AnnouncementPage from '../views/announcementPage.svelte';
+import Campaign1Page from '../views/CampaignsViews/campaign1Page.svelte';
+import Campaign2Page from '../views/CampaignsViews/campaign2Page.svelte';
+import Campaign3Page from '../views/CampaignsViews/campaign3Page.svelte';
+import CustomerServicePage from '../views/customerServicePage.svelte';
+import FAQPage from '../views/faqPage.svelte';
+import HelpPage from '../views/helpPage.svelte';
+import ProfilePage from '../views/profilePage.svelte';
+
 
 const routes = {
     '/': HomePage,
@@ -17,7 +26,17 @@ const routes = {
     '/buyPlaneTicketPage': BuyPlaneTicketPage,
     '/walletPage': WalletPage,
     '/myBillsPage': MyBillsPage,
-    '/mssPage': MSSPage
+    '/mssPage': MSSPage,
+    '/announcementPage': AnnouncementPage,
+    '/campaign1Page': Campaign1Page,
+    '/campaign2Page': Campaign2Page,
+    '/campaign3Page': Campaign3Page,
+    '/customerServicePage': CustomerServicePage,
+    '/faqPage': FAQPage,
+    '/helpPage': HelpPage,
+    '/profilePage': ProfilePage
+
+
 };
 
 export default routes;
