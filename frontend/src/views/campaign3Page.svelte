@@ -1,11 +1,14 @@
 <script>
+    import Navbar from '../components/Navbar/navbar.svelte';
 
 </script>
 
 <main>
+    <Navbar />
+
     <body>
         <div class="blog">
-            <h2>Yurt İçi Uçuşlarda 20 TL İndirim</h2>
+            <h2>THY ile İndirim Fırsatı</h2>
     
             <p class="paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptates officia tempora doloremque hic consequuntur, veniam voluptas quidem at odit iure nam voluptate quae quis? Commodi illum tempora placeat, ex molestias voluptatum ut consequuntur laborum ad, vitae soluta reiciendis a non veniam distinctio magnam eos quis ducimus optio officiis. Repellat eum quaerat quo, earum totam officia, commodi, animi consequatur possimus nam quas sequi omnis tempore beatae consequuntur aliquam enim dolorum voluptatum iusto sunt necessitatibus asperiores. Laboriosam asperiores quam natus sequi illo sunt! Sequi, ad. Autem, aperiam perspiciatis! Voluptate doloremque, enim quibusdam omnis amet ad velit dolorum vero labore esse libero?
@@ -24,7 +27,7 @@
     border: 5px solid cadetblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
-    margin: 20px ;
+    margin: 100px ;
     max-width: 700px;
 }
 

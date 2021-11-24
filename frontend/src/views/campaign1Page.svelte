@@ -1,8 +1,11 @@
 <script>
+    import Navbar from '../components/Navbar/navbar.svelte';
 
 </script>
 
 <main>
+    <Navbar />
+
     <body>
         <div class="blog">
             <h2>Garanti Banka ile 9 Aya Varan Fırsat</h2>
@@ -24,7 +27,7 @@
     border: 5px solid cadetblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
-    margin: 20px ;
+    margin: 100px ;
     max-width: 700px;
 }
 
