@@ -4,69 +4,79 @@ import Navbar from "../components/Navbar/navbar.svelte";
 </script>
 
 <main>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <div class="section d-flex justify-content-center align-items-center ">
+
     <Navbar />
-    <body>
         <div class="container">
             <div class="main">
-                <div class="topbar">
-                    <a href="">Logout</a>
-                    <a href="">Support</a>
-                    <a href="">Work</a>
-                    <a href="">Home</a>
-                </div>
                 <div class="row">
-                    <div class="col-md-4 mt-1">
-                        <div class="card text-center sidebar">
-                            <div class="card-body">
-                                <div class="mt-3">
-                                    <h3>Sergen Berke Altan</h3>
-                                    <a href="">Home</a>
-                                    <a href="">Work</a>
-                                    <a href="">Support</a>
-                                    <a href="">Settings</a>
-                                    <a href="">Signout</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-md-8 mt-1">
                         <div class="card mb-3 content">
-                            <h1 class="m-3 pt-3">About</h1>
+                            <h1 class="m-3 pt-3">Profil</h1>
                             <div class="card-body">
+                                <hr>
+                                <hr>
+
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <h5>Full Name</h5>
+                                        <h5>Cinsiyet:</h5>
                                     </div>
                                     <div class="col-md-9 text-secondary">
-                                        Sergen Berke Altan
+                                        Erkek
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <h5>E-mail</h5>
+                                        <h5>İsim:</h5>
                                     </div>
                                     <div class="col-md-9 text-secondary">
-                                        sergen.altan190@gmail.com
+                                        Sergen Berke
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <h5>Phone</h5>
+                                        <h5>Soy İsim:</h5>
                                     </div>
                                     <div class="col-md-9 text-secondary">
-                                        53472880842
+                                        Altan
                                     </div>
                                 </div>
+                                <hr>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <h5>Adress</h5>
+                                        <h5>Doğum Tarihi:</h5>
                                     </div>
                                     <div class="col-md-9 text-secondary">
-                                        Çorlu/Tekirdağ
+                                        14.06.2000
                                     </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>T.C. Kimlik No:</h5>
+                                    </div>
+                                    <div class="col-md-9 text-secondary">
+                                        00000000000
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h5>E-mail:</h5>
+                                        </div>
+                                        <div class="col-md-9 text-secondary">
+                                            sergen.altan190@gmail.com
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Cep Telefonu:</h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                0000000000
+                                            </div>
                                 </div>
                             </div>
                         </div>
@@ -74,56 +84,43 @@ import Navbar from "../components/Navbar/navbar.svelte";
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+</div>
+
 </main>
 
 <style>
-    body{
-    margin-top: 100px;
-    background-color: lightgray;
-}
+
+    .section{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../assets/Profile PageBG.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        overflow: hidden;
+    }
+
+
 
 .main{
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.topbar{
-    background-color: teal;
-    overflow: hidden;
-}
-
-.topbar a{
-    float: left;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px 26px;
-    text-decoration: none;
-    font-size: 26px;
-}
-
-.sidebar{
-    background-color: #333;
-    color: white;
-    height: 100%;
-}
-
-.sidebar a{
-    margin-left: 10px;
-    display: block;
-    color: white;
-    padding-bottom: 10px;
-    font-size: 15px;
-    text-decoration: none;
+    color: black;
 }
 
 .card{
-    position: relative;
+    position:relative;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    border: solid 5px black;
 }
 
 .content{
-    background-color: whitesmoke;
+    background-color: #BCBDB8;
+}
+.col-md-9{
+    color: black;
 }
 </style>

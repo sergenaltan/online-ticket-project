@@ -4,29 +4,18 @@ import Navbar from "../components/Navbar/navbar.svelte";
 </script>
 
 <main>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
     <body>
         <Navbar />
-        <!--Alert Messages Start
-            <div class="alert-success">
-                <span>Message Sent! Thank you for contacting us.</span>
-            </div>
-            <div class="alert-error">
-                <span>Something went wrong! Please try again.</span>
-            </div>
-        Alert Messages End-->
-        
             <!--Contact Section Start-->
             <div class="contact-section">
                 <div class="contact-info">
-                    <div><i class="fa-solid fa-location-dot"></i>Adress,City,Country</div>
-                    <div><i class="fa-solid fa-envelope"></i>contact@gmail.com</div>
-                    <div><i class="fa-solid fa-phone"></i>+00 000 000 00 00</div>
-                    <div><i class="fa-solid fa-clock"></i>7/24</div>
+                    <div style="color: black"><i class="bi bi-house-fill" style="color: black"></i>Adress,City,Country</div>
+                    <div style="color: black"><i class="bi bi-envelope-fill" style="color: black"></i>contact@gmail.com</div>
+                    <div style="color: black"><i class="bi bi-telephone-fill" style="color: black"></i>+00 000 000 00 00</div>
+                    <div style="color: black"><i class="bi bi-clock-fill" style="color: black"></i>7/24</div>
                 </div>
                 <div class="contact-form">
-                    <h2>Contact Us</h2>
+                    <h2 style="color: black;">Contact Us</h2>
                     <form class="contact" action="" method="post"></form>
                     <input type="text" name="name" class="text-box" placeholder="Your Name" required>
                     <input type="email" name="email" class="text-box" placeholder="Your E-mail" required>
@@ -166,34 +155,6 @@ body{
     .contact-form .text-box{
         width: 100%;
     }
-}
-
-/*Css for Alert Messages*/
-
-.alert-success{
-    z-index: 1;
-    background: #D4EDDA;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #3ad66e;
-    border-radius: 5px;
-}
-
-.alert-error{
-    z-index: 1;
-    background: #fff3cd;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #ffa502;
-    border-radius: 5px;
 }
 
 </style>

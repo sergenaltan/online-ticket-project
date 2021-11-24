@@ -4,9 +4,10 @@
 </script>
 
 <main>
+    <div class="section d-flex justify-content-center align-items-center ">
+
     <Navbar />
 
-    <body>
         <div class="blog">
             <h2>THY ile İndirim Fırsatı</h2>
     
@@ -16,23 +17,29 @@
     
     
         </div>
-    </body>
+    </div>
+
 </main>
 
 <style>
-    body{
-        /*background image koyulabilir*/
-    background-color: darkgray;
-    width: 90%;
-    border: 5px solid cadetblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    margin: 100px ;
-    max-width: 700px;
+.section{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../assets/Campaign3 PageBG.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
 }
 
 .blog{
-    margin-bottom: 20px;
+    background-color: #C1B6B0;
+    width: 90%;
+    border: 5px solid #29221B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin: 200px ;
+    max-width: 700px;
 }
 
 .paragraph{
@@ -41,7 +48,7 @@
 
 h2{
     font-size: 2.0rem;
-    color: white;
+    color: #FE0000;
 }
 
 

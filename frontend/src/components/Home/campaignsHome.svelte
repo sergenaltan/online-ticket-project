@@ -5,7 +5,7 @@
  
  <main>
      <div class="card-group">
-         <div class="card">
+         <div class="card ">
           <a href="/campaign1Page" use:link> <img src="../assets/campaign1.jpg" class="card-img-center" alt="..."> </a>
          </div>
          <div class="card">
@@ -19,6 +19,10 @@
  
  <style>
    .card{
-     cursor: pointer;
+      cursor: pointer;    
+      border: none;
+        }
+   a{
+     margin-left: 5px;
    }
  </style>

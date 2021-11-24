@@ -4,161 +4,66 @@ import Navbar from "../components/Navbar/navbar.svelte";
 </script>
 
 <main>
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <Navbar />
+    <div class="section d-flex justify-content-center align-items-center ">
+        <Navbar />
 
-    <body>
-        <section>
-            <div class="container">
-                <div class="accordion">
-                    <div class="accordion-item"  id="question1">
-                        <a class="accordion-link" href="#question1">
-                            How often do you go to beach?
-                            <i class="icon ion-md-add"></i>
-                            <i class="icon ion-md-remove"></i>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores nisi aliquam magnam modi perspiciatis, dolorum illo eveniet! Quasi qui temporibus aperiam unde laudantium atque libero recusandae sequi dolorum voluptate!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item"  id="question2">
-                        <a class="accordion-link" href="#question2">
-                            How often do you go to beach?
-                            <i class="icon ion-md-add"></i>
-                            <i class="icon ion-md-remove"></i>
-                        </a>
-                        <div class="answer">
-                            <p>                        
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores nisi aliquam magnam modi perspiciatis, dolorum illo eveniet! Quasi qui temporibus aperiam unde laudantium atque libero recusandae sequi dolorum voluptate!
-                             </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item"  id="question3">
-                        <a class="accordion-link" href="#question3">
-                            How often do you go to beach?
-                            <i class="icon ion-md-add"></i>
-                            <i class="icon ion-md-remove"></i>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores nisi aliquam magnam modi perspiciatis, dolorum illo eveniet! Quasi qui temporibus aperiam unde laudantium atque libero recusandae sequi dolorum voluptate!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion-item"  id="question4">
-                        <a class="accordion-link" href="#question4">
-                            How often do you go to beach?
-                            <i class="icon ion-md-add"></i>
-                            <i class="icon ion-md-remove"></i>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores nisi aliquam magnam modi perspiciatis, dolorum illo eveniet! Quasi qui temporibus aperiam unde laudantium atque libero recusandae sequi dolorum voluptate!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header " id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, sed.
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae modi ab nemo iure asperiores? Maxime ipsa harum voluptatem explicabo quis perspiciatis. Velit assumenda magnam distinctio dignissimos, nesciunt ipsa voluptatum rerum?</div>
             </div>
-        </section>
-    </body>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex totam voluptates ratione, temporibus enim vel.
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus, ipsam similique animi labore velit numquam, error dolor commodi, ab architecto fuga repudiandae at facere aperiam deleniti aliquam. Exercitationem placeat a sapiente necessitatibus sunt atque ut, culpa fuga eius nam?</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis quos esse eveniet dolorum laboriosam nam dicta officiis iusto ipsa?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum illo quaerat eos in! Accusantium sit fuga obcaecati esse magni! Odit eos explicabo amet voluptate tempora at natus inventore quo vel, esse alias repellat repellendus. Possimus, perspiciatis nobis, incidunt fugiat tempora ipsum molestiae esse inventore qui neque dolores doloribus quae?</div>
+            </div>
+          </div>
+        </div>
+</div>
 </main>
 
 <style>
-    *,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+    .section{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../assets/Sık Sorulan Sorular Background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
+    }
 
-html{
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-    box-sizing: border-box;
-}
+  .accordion{
+    margin-top: 100px;
+    width: 70%;
+  }
 
-section{
-    width: 100%;
-    height: 100vh;
-    background-color: #3c4053;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .accordion-button{
+    background-color: #5C5C5C;
+    }
 
-.container{
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.accordion-item{
-    background-color: #283042;
-    border-radius: 0.6rem;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.2);
-}
-
-.accordion-link{
-    font-size: 1.6rem;
-    color: gainsboro;
-    text-decoration: none;
-    background-color: #283042;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.accordion-link i{
-    color: #e7d5ff;
-    padding: 5px;
-}
-
-.accordion-link .ion-md-remove{
-    display: none;
-}
-
-.answer{
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: #212838;
-    transition: max-height 1200ms;
-}
-
-.answer::before{
-    content: "";
-    position: absolute;
-    width: 0.6rem;
-    height: 100%;
-    background-color: #8fc460;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.answer p {
-    color: gainsboro;
-    font-size: 14px;
-    padding: 20px;
-}
-
-.accordion-item:target .answer{
-    max-height: 20rem;
-}
-
-.accordion-item:target .accordion-link .ion-md-add{
-    display: none;
-}
-
-.accordion-item:target .accordion-link .ion-md-remove{
-    display: block;
-}
+  .accordion-item{
+    background-color: #F67659;
+  }
+ 
 </style>

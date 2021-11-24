@@ -4,9 +4,10 @@
 </script>
 
 <main>
+    <div class="section d-flex justify-content-center align-items-center ">
+
     <Navbar />
 
-    <body>
         <div class="blog">
             <h2>Yurt İçi Uçuşlarda 20 TL İndirim</h2>
     
@@ -16,24 +17,28 @@
     
     
         </div>
-    </body>
+    </div>
 </main>
 
 <style>
-    body{
-        /*background image koyulabilir*/
-    background-color: darkgray;
-    width: 90%;
-    border: 5px solid cadetblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    margin: 100px ;
-    max-width: 700px;
+    .section{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../assets/Campaign2 PageBG.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
 }
 
 .blog{
     margin-bottom: 20px;
-}
+    background-color: #C1B6B0;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid 5px #29221B;
+    padding: 20px;
+    margin: 200px;
+    max-width: 700px;}
 
 .paragraph{
     padding-left: 5px;
@@ -41,7 +46,7 @@
 
 h2{
     font-size: 2.0rem;
-    color: white;
+    color: #229CAB;
 }
 
 

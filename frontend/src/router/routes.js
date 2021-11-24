@@ -24,6 +24,7 @@ const routes = {
     '/planeTicketListPage': PlaneTicketListPage,
     '/buyBusTicketPage': BuyBusTicketPage,
     '/buyPlaneTicketPage': BuyPlaneTicketPage,
+    '/walletPage' : WalletPage,
     '/myBillsPage': MyBillsPage,
     '/mssPage': MSSPage,
     '/announcementPage': AnnouncementPage,
